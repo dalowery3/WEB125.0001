@@ -1,0 +1,283 @@
+/*COLOR SCHEME
+#4bbcf4 bounty blue
+#61c0bf sea green
+#bbded6 oceana
+#ffb6b9 rosada
+#fae3d9 pink sand
+#e4c8b8 tan sand
+*/
+
+/*CSS Reset*/
+header, body, nav, section, main{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*******************************Universal Settings***************************************/
+body{
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, fieldset legend{
+	text-align: center;
+	font-family: 'Seaweed Script', cursive;
+	font-size: 30px;
+}
+
+h1{
+	font-size: 50px;
+	text-shadow: 3px 2px #bbded6;
+}
+
+p{
+	text-align: justify;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
+}
+
+/***************************Navigation- Mobile First*************************************/
+.menu-icon{
+	font-size: 18px;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 6px;
+	padding: 6px;
+}
+
+.menu-wrap{
+	padding: 10px 15px;
+	width: 100%;
+	height: 2em;
+	background: #4bbcf4;
+	position: sticky;
+	top: 0;
+}
+
+#checkbox{
+	display: none;
+}
+
+#checkbox:checked ~ #nav{
+	max-height: 20em;
+}
+
+#nav a:focus, #nav a:hover{
+	color:#4bbcf4;
+}
+
+#nav a{
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 18px;
+	padding: .50em 1.50em;
+}
+
+#nav{
+	max-height: 0em;
+	overflow: hidden;
+	transition: max-height 0.5s;
+	list-style-type: none;
+	top: 2em;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	background: #ffb6b9;
+}
+
+/*******************************************Main Content***************************************/
+main{
+	background-color: tan;
+	margin: 20px;
+	padding: 25px;
+}
+
+main img{
+	width: 100%;
+	height: auto;
+}
+
+.kite h4, .park h4, .music h4, .golf h4{
+	text-align: center;
+	font-size: 25px;
+}
+
+/****************************************Contact Form********************************************/
+.grid{
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+fieldset{
+	border-color: #000000;
+	border-radius: 5px;
+}
+
+fieldset legend{
+	font-weight: bold;
+}
+
+fieldset label{
+	display: block;
+	padding-top: 5px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+input, select, option{
+	font-size: 20px;
+	border-color: #000000;
+}
+
+textarea{
+	border: 1px solid #000000;
+	font-size: 20px;
+	resize: none;
+	outline: none;
+	margin-bottom: 12px;
+}
+
+.btn{
+	margin: 0 auto;
+	display: block;
+	background-color: #fae3d9;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+/****************************************Footer Content******************************************/
+footer p, .media{
+	text-align: center;
+}
+
+/****************************************Media Queries*******************************************/
+@media screen and (min-width: 935px){
+h1{
+	font-size: 80px;
+}
+
+/************Contact Form************/
+fieldset{
+	border: none;
+}
+}
+
+@media screen and (min-width: 830px) {
+/*********Images on Home page*********/
+.greetings img{
+	float: left;
+	width: 30%;
+	padding-right: 30px;
+}
+	
+.welcome img{
+	float: right;
+	width: 30%;
+	padding-left: 30px;
+}
+
+/*****Images on Local and Events tab*****/
+.columns{
+	display: grid;
+	gap: 20px;
+	grid-template-columns: auto auto;
+}
+
+.shop{
+	grid-column: 1/ span 2;
+	text-align: center;
+}
+
+.shop img{
+	width: 50%;
+}
+}
+
+@media screen and (min-width: 791px){
+/*****Images on 'What To Do' tab*****/
+.eats img{
+	float: left;
+	width: 35%;
+	padding-right: 30px;
+}
+	
+.fun img{
+	float: right;
+	width: 35%;
+	padding-left: 30px;
+}
+	
+.rentals img{
+	width: 35%;
+	padding-right: 30px;
+	float: left;
+}	
+}
+
+@media screen and (max-width: 790px){
+/*****Images on 'What To Do' tab*****/
+.rentals img, .fun img, .eats img{
+	float: none;
+}		
+}
+
+@media screen and (min-width: 600px) {
+/********Universal Settings********/
+body{
+background-color: #e4c8b8;
+}
+
+main{
+	background-color: #bbded6;
+}
+/**********Navbar-Desktop*********/
+.menu-icon{
+	display: none;
+}
+
+#nav{
+	position: relative;
+	top: -1.6em;
+	max-height: .75em;
+	padding: 15px 0;
+	background-color: #4bbcf4;
+}
+
+#nav a{
+	display: block;
+	float: left;
+	padding-left: 15px;
+}
+
+#nav a:hover{
+	color: #ffb6b9;
+}
+/*********Main Content***********/
+main{
+	margin: 20px 80px;
+	padding: 25px 45px;
+}
+
+/**********Contact Form**********/
+textarea{
+	resize: both;
+}
+
+fieldset legend{
+	text-align: left;
+}
+}
+
+@media screen and (max-width: 480px){
+/**********Contact Form**********/
+fieldset{
+	border: none;
+}
+
+fieldset legend{
+	text-align: left;
+}
+}

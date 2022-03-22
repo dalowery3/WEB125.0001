@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="stylesheet">
+    <title>Paradise Island</title>
+</head>
+
+<body>
+    <h1>Paradise Island, North Carolina</h1>
+
+    <header class="menu-wrap">
+        <nav id="navbar">
+        <input type="checkbox" id="checkbox">
+            <ul id="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="activities.html">What To Do</a></li>
+              <li><a href="local.html">Local Businesses</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <label for="checkbox" class="menu-icon">Menu ☰</label>
+      </header> 
+
+    <main>
+        <p>We love hearing from people who visit our site. If you have any questions, please don't hesitate to reach out to us. We're here to ensure that your visit to Paradise Island is everything we hype it up to be.</p>
+        <form class="grid">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" id="Name" placeholder="Your first and last name...">
+
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="Your email...">
+
+                <label for="phone">Phone #:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Include the area code...">
+
+                <label for="topics">Subject</label>
+                <select name="topics" id="topics">
+                    <option value="blank">...</option>
+                    <option value="rentals">Rentals</option>
+                    <option value="active">Recreational Activities</option>
+                    <option value="events">Upcoming Events</option>
+                    <option value="host">Host an Event</option>
+                    <option value="wedding">Weddings</option>
+                    <option value="local">Support to Local Businesses</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="context">Please provide more details below</label>
+                <textarea name="context" id="context" cols="30" rows="10" placeholder="Type here..."></textarea>
+
+                <input type="submit" id="submit" value="submit" class="btn">
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="media">
+            <a href="https://twitter.com/PleasureIsland" target="_blank">
+                <img src="Images/Twitter.png" alt="light blue Twitter logo with bird">
+            </a>
+            <a href="https://www.facebook.com/PleasureIslandNC" target="_blank">
+                <img src="Images/facebook-logo.png" alt="blue and white Facebook logo">
+            </a>
+            <a href="http://pleasureislandchamber.blogspot.com/" target="_blank">
+              <img src="Images/Blogger.png" alt="an orange square with the letter 'B' written in white">
+            </a>
+        </div>
+
+        <p>&copy;Copyright 2012. All Rights Reserved.</p>
+        <p>Brought to you by the Pleasure Island Chamber of Commerce</p>
+    </footer>
+</body>
+</html>
